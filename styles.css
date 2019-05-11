@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url("images/trubutepage-background_03.png");
+}
+
+#main{
+	display: flex;
+	flex-direction: column;
+	color: #533434;
+	background-color: #C1E49D;
+}
+
+a,abbr{
+	text-decoration: none;
+}
+
+a:link{
+	color: #0A0756;
+}
+
+a:hover{
+	color: #0A5207;
+}
+
+#title{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times,"Times New Roman", "serif";
+	font-weight: bold;
+	text-align: center;
+}
+
+#intro{
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+	
+#img-div{
+	width: 100%;
+	height: auto;
+	min-width: inherit;
+	background-color: #F3D1D1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#image{
+	width: 95%;
+	height: auto;
+	margin: auto;
+	margin-top: 8px;
+}
+
+#caption{
+	text-align: center;
+	font-weight: bold;
+}
+
+#tribute-info{
+	background-color: #E9DE93;
+}
+	
+#tribute-info h2{
+	text-align: center;
+}
+
+#tribute-info ul{
+	margin-left: 30px;
+}
+
+#lastquote{
+	text-align: center;
+}
+	
+#lastquote div{
+	font-style: italic;
+	font-weight: bold;
+	margin: 7px 7px;
+}
+
+@media only screen and (max-width:450px){
+	#main{
+		width: 90%;
+		margin: auto;
+	}
+	
+	#title{
+		font-size: 40px;
+	}
+	
+	#image{
+		height: 200px;
+	}
+	
+	#caption{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width:768px){
+	#main{
+		width: 80%;
+		margin: auto;
+	}
+	
+	#title{
+		font-size: 50px;
+	}
+	
+	#intro{
+		font-size: 17px;
+	}
+	
+	#image{
+		height: 320px;
+	}
+	
+	#tribute-info ul{
+		margin-left: 0;
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(2,50%);
+		grid-template-rows: repeat(8,auto);
+	}
+	
+	#tribute-info ul li{
+		background-color: #BFEDEB;
+		margin: 5px;
+	}
+}
+
+@media only screen and (min-width:769px){
+	#main{
+		width: 80%;
+		height: auto;
+		margin: auto;
+	}
+	
+	#title{
+		font-size: 55px;
+	}
+	
+	#intro{
+		font-size: 20px;
+	}
+	
+	#image{
+		height: 450px;
+	}
+	
+	#tribute-info ul{
+		margin-left: 0;
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(4,25%);
+		grid-template-rows: repeat(4,auto);
+	}
+	
+	#tribute-info ul li{
+		background-color: #BFEDEB;
+		margin: 5px;
+		padding: 5px;
+		font-size: 17px;
+	}
+}
